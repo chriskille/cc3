@@ -205,7 +205,7 @@ export default function App() {
                   <div style={{ fontSize:18, fontWeight:700, fontFamily:"'Familjen Grotesk',sans-serif", color:'#dde3f0', marginBottom:8 }}>
                     {fmtDuration(calcWorkSeconds())}
                   </div>
-                  <div style={{ display:'flex', gap:4' }}>
+                  <div style={{ display:'flex', gap:4 }}>
                     {session.status==='online' && <button onClick={handleBreak} style={{ flex:1, padding:'5px 0', borderRadius:6, border:'1px solid #f09a2a', background:'transparent', color:'#f09a2a', fontSize:11, fontWeight:600, cursor:'pointer' }}>Break</button>}
                     {session.status==='break' && <button onClick={handleResume} style={{ flex:1, padding:'5px 0', borderRadius:6, border:'1px solid #0fba7a', background:'transparent', color:'#0fba7a', fontSize:11, fontWeight:600, cursor:'pointer' }}>Resume</button>}
                     <button onClick={handleClockOut} style={{ flex:1, padding:'5px 0', borderRadius:6, border:'1px solid #e8344a', background:'transparent', color:'#e8344a', fontSize:11, fontWeight:600, cursor:'pointer' }}>Clock Out</button>
